@@ -186,6 +186,14 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -903928267
       objectReference: {fileID: 0}
+    - target: {fileID: 5567444540889744525, guid: ade80089489544fe3a57c1b14805a58d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567444540889744525, guid: ade80089489544fe3a57c1b14805a58d, type: 3}
+      propertyPath: m_TagString
+      value: Blocking
+      objectReference: {fileID: 0}
     - target: {fileID: 5567444540889744528, guid: ade80089489544fe3a57c1b14805a58d, type: 3}
       propertyPath: m_TileColorArray.Array.size
       value: 3
@@ -638,9 +646,10 @@ GameObject:
   - component: {fileID: 587965352}
   - component: {fileID: 587965351}
   - component: {fileID: 587965350}
+  - component: {fileID: 587965353}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -730,7 +739,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &587965351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -776,6 +785,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &587965353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587965347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1bb7cf57bdbca5439031c6e180c65b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 1
+  ySpeed: 0.75
 --- !u!114 &771055021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,6 +842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 890610855}
+  - component: {fileID: 890610856}
   m_Layer: 0
   m_Name: Camera Holder
   m_TagString: Untagged
@@ -841,3 +865,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &890610856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890610854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ba4deb2b4af5645afcad15d64bcc44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundX: 0.3
+  boundY: 0.15
